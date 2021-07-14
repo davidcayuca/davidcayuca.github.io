@@ -8,6 +8,17 @@ https://coolors.co/f7fff7-343434-2f3061-ffe66d-a1c6d7
 #A1C6D7 - blue light
 */
 
+/*
+
+/* CSS HEX -- COLOR PALETTE
+#264653ff --charcoal
+#2a9d8fff --persian-green
+#e9c46aff --orange-yellow-crayola
+#f4a261ff --sandy-brown 
+#e76f51ff --burnt-sienna
+#009999 - resume
+*/
+
 /* Global styles
 ------------------------------------*/
 html {
@@ -19,12 +30,22 @@ html {
   box-sizing: inherit;
 }
 
+@font-face {
+  font-family: DomaineDisplayNar;
+  src: url(/font/DomaineDispNar-Medium.woff);
+}
+
+@font-face {
+  font-family: DomaineDisplayText;
+  src: url(/font/DomaineDispNar-Regular.woff);
+}
+
 body {
   color: #343434;
   margin: 0;
   padding: 0;
-  font-family: "Montserrat", sans-serif;
-  font-size: 15px;
+  font-family: "Inter", serif;
+  font-size: 18px;
   line-height: 1.5;
 }
 img {
@@ -38,17 +59,24 @@ a:hover {
 }
 h1 {
   font-size: 100px;
-  line-height: 1;
+  font-family: "DomaineDisplayNar";
+  font-weight: 100;
+  margin: 0;
+  line-height: normal;
 }
+
 h2 {
-  font-size: 45px;
-}
-h1,
-h2 {
-  font-family: "Caveat", cursive;
-  font-weight: 400;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: "Inter";
   margin: 0;
 }
+
+h2.job-title {
+  font-size: 40px;
+  font-weight: 200;
+}
+
 .content-wrap {
   max-width: 800px;
   width: 85%;
@@ -75,7 +103,7 @@ h3 {
 /* Profile
 ------------------------------------*/
 header {
-  background: #2f3061;
+  background: #009999;
   color: #f7fff7;
 }
 
@@ -89,14 +117,14 @@ header {
 }
 .projects .btn {
   color: #f7fff7;
-  background: #2f3061;
+  background: #009999;
   text-decoration: none;
   padding: 8px;
   border-radius: 4px;
   display: inline-block;
 }
 .projects .btn:hover {
-  background: rgba(47, 48, 97, 80%);
+  background: rgba(0, 153, 153, 80%);
 }
 .project-item {
   overflow: hidden;
@@ -108,7 +136,13 @@ header {
 /* Work Experience
 ------------------------------------*/
 .work-experience {
-  background: #a1c6d7;
+  background: #e76f51;
+}
+
+.job-details,
+h3.job-details,
+p.job-details {
+  color: #f7fff7;
 }
 
 /* Education
@@ -126,7 +160,7 @@ header {
 /* Contact Info
 ------------------------------------*/
 footer {
-  background: #343434;
+  background: #264653;
   color: #f7fff7;
 }
 .contact-list {
