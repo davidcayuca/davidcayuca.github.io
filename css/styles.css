@@ -143,7 +143,9 @@ header {
 /* Work Experience
 ------------------------------------*/
 .work-experience {
-  background: #e76f51;
+  background: #264653;
+
+  /*background: #e76f51;*/
 }
 
 .job-details,
@@ -167,7 +169,7 @@ p.job-details {
 /* Contact Info
 ------------------------------------*/
 footer {
-  background: #264653;
+  background: #343434;
   color: #f7fff7;
 }
 .contact-list {
@@ -177,6 +179,18 @@ footer {
 .contact-list a {
   padding: 15px;
   display: inline-block;
+}
+
+/* Icon
+--------------------------*/
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
 }
 
 /* Responsive
