@@ -33,12 +33,12 @@ html {
 
 @font-face {
   font-family: DomaineDisplayNar;
-  src: url(/font/DomaineDispNar-Medium.woff);
+  src: url(../assets/font/DomaineDispNar-Medium.woff);
 }
 
 @font-face {
   font-family: DomaineDisplayText;
-  src: url(/font/DomaineDispNar-Regular.woff);
+  src: url(../assets/font/DomaineDispNar-Regular.woff);
 }
 
 body {
@@ -149,7 +149,7 @@ p.job-details {
 /* Education
 ------------------------------------*/
 .education {
-  background-image: url(../images/joanna-kosinska-unsplash.jpg);
+  background-image: url(../assets/img/joanna-kosinska-unsplash.jpg);
   background-size: cover;
   background-position: top right;
   padding-bottom: 100px;
@@ -226,4 +226,10 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
 }
